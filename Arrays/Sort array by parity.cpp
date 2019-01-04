@@ -8,10 +8,10 @@ public:
      vector<int> sortArrayByParity(vector<int> &A) { 
                 
         for (int i = 0, j = 0; j < A.size(); j++){
-            if (final_array[j] % 2 == 0){
+            if (A[j] % 2 == 0){
                 swap(A[i++], A[j]);
             }
         }
-        return final_array;
+        return A;
     }
 };
